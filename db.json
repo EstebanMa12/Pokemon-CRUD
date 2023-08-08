@@ -1,13 +1,3 @@
 {
-  "pokemons": {
-    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
-    "name": "squirtle",
-    "type": [
-      "water"
-    ],
-    "stats": [
-      5,
-      90
-    ]
-  }
+  "pokemons": []
 }
