@@ -8,5 +8,5 @@ export class Pokemon{
     }
 }
 
-let Pikachu = new Pokemon("Pikachu","Electric",100)
-console.log(Pikachu);
+/* let Pikachu = new Pokemon("Pikachu","Electric",100)
+console.log(Pikachu); */

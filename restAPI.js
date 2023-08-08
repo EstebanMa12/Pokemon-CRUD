@@ -1,12 +1,15 @@
 import { mostrarPokemon } from "./mostrarPokemon.js";
-
-console.log('Hola mundo');
+import { capturarPokemon } from "./pokemonCapture.js";
+import { enviarDatosPokemon } from "./jsonServer.js";
+import { Pokemon } from "./pokemonClass.js";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
 //const captureBotom = document.querySelectorAll(".select_Button")
 /* const botonesHeader = document.querySelectorAll(".btn-header"); */
 let URL = "https://pokeapi.co/api/v2/pokemon/";
+
+const dbjson = "http://localhost:3000/pokemons/";
 
 for (let i = 1; i <= 151; i++) {
     axios.get(URL + i)
@@ -38,11 +41,22 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     }
 }))
 
-listaPokemon.addEventListener("click", (event) => {
+listaPokemon.addEventListener("click", async (event) => {
     if (event.target.classList.contains("select_Button")) {
+        event.preventDefault();
         const pokeId = event.target.id;
-        // Lógica para capturar aquí
-        console.log("Pokemon capturado:", pokeId);
+        // Lógica para capturar aqui
+        const pokemonInfo= await capturarPokemon(URL,pokeId)
+
+        console.log(pokemonInfo)
+        if (pokemonInfo){
+            console.log("Información enviada");
+            enviarDatosPokemon(pokemonInfo,dbjson)
+        }else{
+            console.log('El pokemon no existe');
+        }
+        
+        console.log("Pokemon capturado:", pokemonInfo.name);
     }
 });
 
