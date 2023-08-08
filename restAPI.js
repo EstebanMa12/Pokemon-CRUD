@@ -1,7 +1,10 @@
 import { mostrarPokemon } from "./mostrarPokemon.js";
 
+console.log('Hola mundo');
+
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
+//const captureBotom = document.querySelectorAll(".select_Button")
 /* const botonesHeader = document.querySelectorAll(".btn-header"); */
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -34,3 +37,9 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
             .catch(error => console.error(error));
     }
 }))
+
+
+    const captureButton = document.querySelectorAll(".select_Button");
+    captureButton.forEach(button => button.addEventListener('click', () => {
+        console.log("Captura Hecha");
+    }));
