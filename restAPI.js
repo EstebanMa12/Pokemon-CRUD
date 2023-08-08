@@ -38,8 +38,16 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     }
 }))
 
-
-    const captureButton = document.querySelectorAll(".select_Button");
-    captureButton.forEach(button => button.addEventListener('click', () => {
+// Seleccionar todos los botones de captura y agregar event listeners
+const captureButtons = document.querySelectorAll(".select_Button");
+captureButtons.forEach(button => {
+    button.addEventListener('click', () => {
         console.log("Captura Hecha");
-    }));
+        const pokemonContainer= button.closest('.pokemon')
+        console.log(pokemonContainer);
+
+    });
+});
+
+
+
