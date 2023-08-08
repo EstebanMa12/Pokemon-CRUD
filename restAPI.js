@@ -1,7 +1,7 @@
-import { mostrarPokemon } from "./mostrarPokemon.js";
-import { capturarPokemon } from "./pokemonCapture.js";
-import { enviarDatosPokemon } from "./jsonServer.js";
-import { Pokemon } from "./pokemonClass.js";
+import { mostrarPokemon } from "./scripts/mostrarPokemon.js";
+import { capturarPokemon } from "./scripts/pokemonCapture.js";
+import { enviarDatosPokemon } from "./scripts/jsonServer.js";
+import { Pokemon } from "./scripts/pokemonClass.js";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
