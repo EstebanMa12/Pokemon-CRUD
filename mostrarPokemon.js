@@ -11,7 +11,7 @@ export function mostrarPokemon(poke) {
     }
     const div = document.createElement("div");
     div.classList.add("pokemon");
-    div.innerHTML = `
+    div.innerHTML = /* html */`
         <p class="pokemon-id-back">#${pokeId}</p>
         <div class="pokemon-imagen">
             <img src="${poke.sprites.other["official-artwork"].front_default}" alt="${poke.name}">
@@ -28,7 +28,7 @@ export function mostrarPokemon(poke) {
                 <p class="stat">${poke.height}m</p>
                 <p class="stat">${poke.weight}kg</p>
             </div>
-            <button type="button" class="select_Button">Capture</button>
+            <button type="button" class="select_Button" id="${pokeId}">Capture</button>
         </div>
     `;
     listaPokemon.append(div);
