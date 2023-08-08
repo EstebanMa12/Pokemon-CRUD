@@ -16,10 +16,9 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     const botonId = event.currentTarget.id;
 
     listaPokemon.innerHTML = "";
-
     for (let i = 1; i <= 151; i++) {
-        fetch(URL + i)
-            .then((response) => response.json())
+        axios.get(URL + i)
+            .then((response) => response.data)
             .then(data => {
 
                 if(botonId === "ver-todos") {
@@ -32,5 +31,6 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
                 }
 
             })
+            .catch(error => console.error(error));
     }
 }))
