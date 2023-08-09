@@ -37,7 +37,7 @@ export async function mostrarMisPokemon(pokemons){
             tipos = tipos.join('');
             const div = document.createElement("div");
             div.classList.add("pokemon");
-            div.innerHTML = `
+            div.innerHTML =/* html */ `
             <p class="pokemon-id-back">#${pokemon.id}</p>
             <div class="pokemon-imagen">
                 <img src="${pokemon.img}" alt="${pokemon.name}">

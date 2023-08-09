@@ -166,13 +166,6 @@ header {
   align-items: center;
   text-align: center;
 }
-.pokemon-contenedor {
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .pokemon-id {
   background-color: #ececec;
   padding: 0.25rem 0.5rem;
@@ -188,6 +181,14 @@ header {
   gap: 0.5rem;
   font-size: 0.75rem;
   font-weight: 500;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nombre-contenedor {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
