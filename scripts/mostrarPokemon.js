@@ -31,17 +31,8 @@ export function mostrarPokemon(poke) {
     listaPokemon.append(div);
 }
 
-/* export async function mostrarMisPokemon(){
-    try {
-        const response = await axios.get("http://localhost:3000/pokemons");
-        const data = response.data
-    
-        if (!data) {
-            throw new Error('Respuesta vacía o inválida');
-        }
-    
-        listaPokemon.innerHTML = "";
-        for (const pokemon of data){
+export async function mostrarMisPokemon(pokemons){
+        for (const pokemon of pokemons){
             let tipos = pokemon.type.map((type) => `<p class="${type} tipo">${type}</p>`);
             tipos = tipos.join('');
             const div = document.createElement("div");
@@ -63,12 +54,10 @@ export function mostrarPokemon(poke) {
                     <p class="stat">${pokemon.stats[0]}m</p>
                     <p class="stat">${pokemon.stats[1]}kg</p>
                 </div>
-                <button type="button" class="select_Button" id="${pokeId}">Capture</button>
+                <button type="button" class="edit_Button" >Edit</button>
+                <button type="button" class="edit_Button" >Delete</button>
             </div>`
         listaPokemon.append(div);
         }
-    } catch (error) {
-        console.error('Error al mostrar los Pokémon:', error);
-    }
+} 
     
-} */

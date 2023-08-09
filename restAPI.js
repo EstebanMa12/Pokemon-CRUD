@@ -1,12 +1,12 @@
-import axios, {isCancel, AxiosError} from 'axios';
+/* import axios, {isCancel, AxiosError} from 'axios'; */
 
-import { mostrarPokemon } from "./scripts/mostrarPokemon.js";
+import { mostrarMisPokemon, mostrarPokemon } from "./scripts/mostrarPokemon.js";
 import { capturarPokemon } from "./scripts/pokemonCapture.js";
 import { enviarDatosPokemon } from "./scripts/jsonServer.js";
+import axios from "axios";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
-const showMyList = document.querySelector(".buttonPokemon");
 
 console.log(axios.isCancel('something'));
 
@@ -22,7 +22,7 @@ for (let i = 1; i <= 151; i++) {
         .catch(error=> console.error(error));
 }
 
-//* Se saca los pokemons por clase 
+//Se saca los pokemons por clase 
 
 botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     const botonId = event.currentTarget.id;
@@ -66,9 +66,36 @@ listaPokemon.addEventListener("click", async (event) => {
     }
 });
 
-showMyList.addEventListener('click', (event)=>{
+const showMyList = document.querySelector(".buttonPokemon");
+showMyList.addEventListener('click', async (event)=>{
     console.log("Mostrando mi lista de pokemons")
-    //listaPokemon.innerHTML = "";
-    //const response = axios.get(dbjson) 
+    try {
+        listaPokemon.innerHTML = "";
+        const response = axios.get(dbjson) ;
+        const data = response.data
+        
+        if (!data){
+            throw new Error('Respuesta vacia o inválida')
+        }
+
+        mostrarMisPokemon(data);
+    }catch (error){
+        console.error("Error al mostrar mis Pókemon: ", error);
+    }
 })  
+
+
+document.addEventListener('click', async (event) => {
+    if (event.target.classList.contains('delete_Button')) {
+        const pokemonId = event.target.getAttribute('data-id');
+        // Lógica para editar el Pokémon con el ID pokemonId
+    } else if (event.target.classList.contains('delete_Button')) {
+        const pokemonId = event.target.getAttribute('data-id');
+        try{
+            const response = await axios.delete(`http://localhost:3000/pokemons/${pokemonId}`)
+        }catch (error){
+            console.error('Error al eliminar el Pokémon:', error);
+        }
+    }
+});
 
