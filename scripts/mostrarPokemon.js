@@ -1,3 +1,4 @@
+import axios from "axios";
 
 export function mostrarPokemon(poke) {
     let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`);
@@ -5,12 +6,8 @@ export function mostrarPokemon(poke) {
 
     
 
-    let pokeId = poke.id.toString();
-    if (pokeId.length === 1) {
-        pokeId = "00" + pokeId;
-    } else if (pokeId.length === 2) {
-        pokeId = "0" + pokeId;
-    }
+    let pokeId = poke.id.toString().padStart(3, '0');
+
     const div = document.createElement("div");
     div.classList.add("pokemon");
     div.innerHTML = /* html */`
@@ -34,4 +31,46 @@ export function mostrarPokemon(poke) {
         </div>
     `;
     listaPokemon.append(div);
+}
+
+export async function mostrarMisPokemon(){
+    try {
+        const response = await axios.get("http://localhost:3000/pokemons");
+        const data = response.data
+    
+        if (!data) {
+            throw new Error('Respuesta vacía o inválida');
+        }
+    
+        listaPokemon.innerHTML = "";
+        for (const pokemon of data){
+            let tipos = pokemon.type.map((type) => `<p class="${type} tipo">${type}</p>`);
+            tipos = tipos.join('');
+            const div = document.createElement("div");
+            div.classList.add("pokemon");
+            div.innerHTML = /* html */`
+            <p class="pokemon-id-back">#${pokemon.id}</p>
+            <div class="pokemon-imagen">
+                <img src="${pokemon.img}" alt="${pokemon.name}">
+            </div>
+            <div class="pokemon-info">
+                <div class="nombre-contenedor">
+                    <p class="pokemon-id">#${pokemon.id}</p>
+                    <h2 class="pokemon-nombre">${pokemon.name}</h2>
+                </div>
+                <div class="pokemon-tipos">
+                    ${tipos}
+                </div>
+                <div class="pokemon-stats">
+                    <p class="stat">${pokemon.stats[0]}m</p>
+                    <p class="stat">${pokemon.stats[1]}kg</p>
+                </div>
+                <button type="button" class="select_Button" id="${pokeId}">Capture</button>
+            </div>`
+        listaPokemon.append(div);
+        }
+    } catch (error) {
+        console.error('Error al mostrar los Pokémon:', error);
+    }
+    
 }

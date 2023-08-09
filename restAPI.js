@@ -1,12 +1,11 @@
 import { mostrarPokemon } from "./scripts/mostrarPokemon.js";
 import { capturarPokemon } from "./scripts/pokemonCapture.js";
 import { enviarDatosPokemon } from "./scripts/jsonServer.js";
-import { Pokemon } from "./scripts/pokemonClass.js";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
-//const captureBotom = document.querySelectorAll(".select_Button")
-/* const botonesHeader = document.querySelectorAll(".btn-header"); */
+const showMyList = document.querySelector
+
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 const dbjson = "http://localhost:3000/pokemons/";
@@ -17,6 +16,8 @@ for (let i = 1; i <= 151; i++) {
         .then(data => mostrarPokemon(data))
         .catch(error=> console.error(error));
 }
+
+//* Se saca los pokemons por clase 
 
 botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     const botonId = event.currentTarget.id;
