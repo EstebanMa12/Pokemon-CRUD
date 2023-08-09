@@ -1,4 +1,4 @@
-/* export function enviarDatosPokemon(pokemonInfo,URL) {
+export function enviarDatosPokemon(pokemonInfo,URL) {
     axios.post(URL,pokemonInfo)
     .then(response =>{
         console.log('Datos enviados al servidor:', response.data);
@@ -6,9 +6,9 @@
     .catch(error =>{
         console.error("Error al enviar los datos al servidor", error);
     })
-} */
+}
 
-export function enviarDatosPokemon(pokemonInfo, URL) {
+/* export function enviarDatosPokemon(pokemonInfo, URL) {
     axios.get(URL)
         .then(response => {
             const data = response.data;
@@ -33,4 +33,4 @@ export function enviarDatosPokemon(pokemonInfo, URL) {
         .catch(error => {
             console.error('Error al actualizar datos en el servidor:', error);
         });
-}
+} */

@@ -1,3 +1,42 @@
 {
-  "pokemons": []
+  "pokemons": [
+    {
+      "name": "bulbasaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "stats": [
+        7,
+        69
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+      "id": 1
+    },
+    {
+      "name": "caterpie",
+      "type": [
+        "bug"
+      ],
+      "stats": [
+        3,
+        29
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+      "id": 2
+    },
+    {
+      "name": "venusaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "stats": [
+        20,
+        1000
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+      "id": 3
+    }
+  ]
 }
