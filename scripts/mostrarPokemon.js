@@ -4,8 +4,6 @@ export function mostrarPokemon(poke) {
     let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`);
     tipos = tipos.join('');
 
-    
-
     let pokeId = poke.id.toString().padStart(3, '0');
 
     const div = document.createElement("div");
@@ -33,7 +31,7 @@ export function mostrarPokemon(poke) {
     listaPokemon.append(div);
 }
 
-export async function mostrarMisPokemon(){
+/* export async function mostrarMisPokemon(){
     try {
         const response = await axios.get("http://localhost:3000/pokemons");
         const data = response.data
@@ -48,7 +46,7 @@ export async function mostrarMisPokemon(){
             tipos = tipos.join('');
             const div = document.createElement("div");
             div.classList.add("pokemon");
-            div.innerHTML = /* html */`
+            div.innerHTML = `
             <p class="pokemon-id-back">#${pokemon.id}</p>
             <div class="pokemon-imagen">
                 <img src="${pokemon.img}" alt="${pokemon.name}">
@@ -73,4 +71,4 @@ export async function mostrarMisPokemon(){
         console.error('Error al mostrar los Pokémon:', error);
     }
     
-}
+} */

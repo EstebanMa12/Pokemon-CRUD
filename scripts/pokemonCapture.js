@@ -1,4 +1,4 @@
-
+import axios from "axios";
 /* export function capturarPokemon(url, id) {
     const URL = url + String(Number(id));
     

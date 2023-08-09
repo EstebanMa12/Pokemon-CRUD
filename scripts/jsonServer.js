@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export function enviarDatosPokemon(pokemonInfo,URL) {
     axios.post(URL,pokemonInfo)
     .then(response =>{

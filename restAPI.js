@@ -1,10 +1,15 @@
+import axios, {isCancel, AxiosError} from 'axios';
+
 import { mostrarPokemon } from "./scripts/mostrarPokemon.js";
 import { capturarPokemon } from "./scripts/pokemonCapture.js";
 import { enviarDatosPokemon } from "./scripts/jsonServer.js";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
-const showMyList = document.querySelector
+const showMyList = document.querySelector(".buttonPokemon");
+
+console.log(axios.isCancel('something'));
+
 
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -60,4 +65,10 @@ listaPokemon.addEventListener("click", async (event) => {
         console.log("Pokemon capturado:", pokemonInfo.name);
     }
 });
+
+showMyList.addEventListener('click', (event)=>{
+    console.log("Mostrando mi lista de pokemons")
+    //listaPokemon.innerHTML = "";
+    //const response = axios.get(dbjson) 
+})  
 
