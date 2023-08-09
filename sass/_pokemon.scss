@@ -1,0 +1,95 @@
+@use 'variables' as *;
+
+.pokemon {
+    border-radius: 1rem;
+    background-color: $clr-white;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    &:hover{
+        background-color: red;
+        .select_Button{
+            display: inline;
+            }
+        }
+
+    &-todos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+        @media screen and (min-width: 470px) {
+                grid-template-columns: 1fr 1fr;
+        }
+            
+        @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr;
+        }
+    }    
+
+    &-id-back {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 6rem;
+        font-weight: 800;
+        z-index: -1;
+        color: $clr-gray;
+    }
+
+    &-imagen {
+        padding-inline: 1rem;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+            max-width: 6rem;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding-inline: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-id {
+        background-color: $clr-gray;
+        padding: .25rem .5rem;
+        border-radius: 100vmax;
+        font-size: .75rem;
+        font-weight: 500;
+    }
+
+    &-nombre {
+        font-size: 1.4rem;
+    }
+
+    &-tipos {
+        display: flex;
+        gap: .5rem;
+        font-size: .75rem;
+        font-weight: 500;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.nombre-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
