@@ -31,7 +31,7 @@ export function mostrarPokemon(poke) {
     listaPokemon.append(div);
 }
 
-export async function mostrarMisPokemon(pokemons){
+export function mostrarMisPokemon(pokemons){
         for (const pokemon of pokemons){
             let tipos = pokemon.type.map((type) => `<p class="${type} tipo">${type}</p>`);
             tipos = tipos.join('');
