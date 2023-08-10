@@ -84,13 +84,16 @@ showMyList.addEventListener('click', async (event)=>{
 
 
 document.addEventListener('click', async (event) => {
-    if (event.target.classList.contains('delete_Button')) {
-        const pokemonId = event.target.getAttribute('data-id');
+    if (event.target.classList.contains('edit_Button')) {
+        const pokemonId = event.target.getAttribute('pokemon-id');
         // Lógica para editar el Pokémon con el ID pokemonId
     } else if (event.target.classList.contains('delete_Button')) {
-        const pokemonId = event.target.getAttribute('data-id');
+        const pokemonId = event.target.getAttribute('pokemon-id');
         try{
             const response = await axios.delete(`http://localhost:3000/pokemons/${pokemonId}`)
+            console.log(`El Pokemon ${pokemonId} fue eliminado`);
+
+            showMyList.click()
         }catch (error){
             console.error('Error al eliminar el Pokémon:', error);
         }

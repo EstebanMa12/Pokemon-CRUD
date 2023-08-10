@@ -57,8 +57,8 @@ export function mostrarMisPokemon(pokemons){
                     <p class="stat">${pokemon.stats[0]}m</p>
                     <p class="stat">${pokemon.stats[1]}kg</p>
                 </div>
-                <button type="button" class="edit_Button" >Edit</button>
-                <button type="button" class="delete_Button" >Delete</button>
+                <button type="button" class="edit_Button" pokemon-id="${pokemon.id}">Edit</button>
+                <button type="button" class="delete_Button" pokemon-id="${pokemon.id}">Delete</button>
             </div>`
         listaPokemon.append(div);
         }

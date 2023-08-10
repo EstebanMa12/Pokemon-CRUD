@@ -1,92 +1,6 @@
 {
   "pokemons": [
     {
-      "name": "caterpie",
-      "type": [
-        "bug"
-      ],
-      "stats": [
-        3,
-        29
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
-      "id": 2
-    },
-    {
-      "name": "venusaur",
-      "type": [
-        "grass",
-        "poison"
-      ],
-      "stats": [
-        20,
-        1000
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
-      "id": 3
-    },
-    {
-      "id": "023",
-      "name": "ekans",
-      "type": [
-        "poison"
-      ],
-      "stats": [
-        20,
-        69
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
-    },
-    {
-      "id": "008",
-      "name": "wartortle",
-      "type": [
-        "water"
-      ],
-      "stats": [
-        10,
-        225
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
-    },
-    {
-      "id": "011",
-      "name": "metapod",
-      "type": [
-        "bug"
-      ],
-      "stats": [
-        7,
-        99
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
-    },
-    {
-      "id": "009",
-      "name": "blastoise",
-      "type": [
-        "water"
-      ],
-      "stats": [
-        16,
-        855
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
-    },
-    {
-      "id": "001",
-      "name": "bulbasaur",
-      "type": [
-        "grass",
-        "poison"
-      ],
-      "stats": [
-        7,
-        69
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-    },
-    {
       "id": "003",
       "name": "venusaur",
       "type": [
@@ -135,6 +49,18 @@
         190
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+    },
+    {
+      "id": "030",
+      "name": "nidorina",
+      "type": [
+        "poison"
+      ],
+      "stats": [
+        8,
+        200
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
     }
   ]
 }
