@@ -81,6 +81,7 @@ header {
   top: 50%; /* Centrar verticalmente */
   right: 5rem; /* Alinear al margen derecho */
   transform: translateY(-50%); /* Ajustar la posición vertical */
+  color: white;
 }
 .miPokemon:hover {
   background: #e62097;
@@ -122,6 +123,12 @@ header {
   background-color: red;
 }
 .pokemon:hover .select_Button {
+  display: inline;
+}
+.pokemon:hover .edit_Button {
+  display: inline;
+}
+.pokemon:hover .delete_Button {
   display: inline;
 }
 .pokemon-todos {
@@ -202,6 +209,45 @@ header {
   display: flex;
   gap: 1rem;
   font-size: 0.85rem;
+}
+.edit_Button {
+  display: none;
+  width: 70%;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 1px 1px 3px #666666;
+  -moz-box-shadow: 1px 1px 3px #666666;
+  box-shadow: 1px 1px 3px #666666;
+  text-shadow: 2px 1px 3px #666666;
+  background: #4b4a75;
+}
+.edit_Button:hover {
+  background: #2080e6;
+}
+
+.delete_Button {
+  display: none;
+  width: 70%;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 1px 1px 3px #666666;
+  -moz-box-shadow: 1px 1px 3px #666666;
+  box-shadow: 1px 1px 3px #666666;
+  text-shadow: 2px 1px 3px #666666;
+  background: #ff5100;
+}
+.delete_Button:hover {
+  background: #d4762f;
 }
 
 .stat {

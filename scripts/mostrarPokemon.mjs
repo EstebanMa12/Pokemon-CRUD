@@ -32,6 +32,9 @@ export function mostrarPokemon(poke) {
 }
 
 export function mostrarMisPokemon(pokemons){
+    const titulo = document.createElement("h1");
+    titulo.textContent = "My Pokemon List";
+    listaPokemon.append(titulo);
         for (const pokemon of pokemons){
             let tipos = pokemon.type.map((type) => `<p class="${type} tipo">${type}</p>`);
             tipos = tipos.join('');
@@ -55,7 +58,7 @@ export function mostrarMisPokemon(pokemons){
                     <p class="stat">${pokemon.stats[1]}kg</p>
                 </div>
                 <button type="button" class="edit_Button" >Edit</button>
-                <button type="button" class="edit_Button" >Delete</button>
+                <button type="button" class="delete_Button" >Delete</button>
             </div>`
         listaPokemon.append(div);
         }
