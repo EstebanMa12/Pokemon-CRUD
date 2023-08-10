@@ -9,20 +9,16 @@ const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
 
 
-let URL = "https://pokeapi.co/api/v2/pokemon?limit=150";
+let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 const dbjson = "http://localhost:3000/pokemons/";
 
-async function getData(URL){
-    const response = await axios.get(URL)
-    console.log(response);
-        /* .then(response=> {
-            console.log(response.data);})
+for (let i = 1; i <= 151; i++) {
+    axios.get(URL + i)
+        .then(response=> response.data)
         .then(data => mostrarPokemon(data))
-        .catch(error=> console.error(error)); */
+        .catch(error=> console.error(error));
 }
-
-getData(URL)
 
 //Se saca los pokemons por clase 
 
