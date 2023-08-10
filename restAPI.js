@@ -1,4 +1,5 @@
-import axios from "axios";
+import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm';
+
 
 import { mostrarMisPokemon, mostrarPokemon } from "./scripts/mostrarPokemon.mjs";
 import { capturarPokemon } from "./scripts/pokemonCapture.mjs";
@@ -7,19 +8,21 @@ import { enviarDatosPokemon } from "./scripts/jsonServer.mjs";
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
 
-console.log(axios.isCancel('something'));
 
-
-let URL = "https://pokeapi.co/api/v2/pokemon/";
+let URL = "https://pokeapi.co/api/v2/pokemon?limit=150";
 
 const dbjson = "http://localhost:3000/pokemons/";
 
-for (let i = 1; i <= 151; i++) {
-    axios.get(URL + i)
-        .then(response=> response.data)
+async function getData(URL){
+    const response = await axios.get(URL)
+    console.log(response);
+        /* .then(response=> {
+            console.log(response.data);})
         .then(data => mostrarPokemon(data))
-        .catch(error=> console.error(error));
+        .catch(error=> console.error(error)); */
 }
+
+getData(URL)
 
 //Se saca los pokemons por clase 
 
