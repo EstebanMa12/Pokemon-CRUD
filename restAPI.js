@@ -1,9 +1,8 @@
-/* import axios, {isCancel, AxiosError} from 'axios'; */
-
-import { mostrarMisPokemon, mostrarPokemon } from "./scripts/mostrarPokemon.js";
-import { capturarPokemon } from "./scripts/pokemonCapture.js";
-import { enviarDatosPokemon } from "./scripts/jsonServer.js";
 import axios from "axios";
+
+import { mostrarMisPokemon, mostrarPokemon } from "./scripts/mostrarPokemon.mjs";
+import { capturarPokemon } from "./scripts/pokemonCapture.mjs";
+import { enviarDatosPokemon } from "./scripts/jsonServer.mjs";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
@@ -71,7 +70,7 @@ showMyList.addEventListener('click', async (event)=>{
     console.log("Mostrando mi lista de pokemons")
     try {
         listaPokemon.innerHTML = "";
-        const response = axios.get(dbjson) ;
+        const response = await axios.get(dbjson) ;
         const data = response.data
         
         if (!data){

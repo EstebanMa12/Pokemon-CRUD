@@ -1,4 +1,4 @@
-import axios from "axios";
+/* import axios from "axios"; */
 
 export function mostrarPokemon(poke) {
     let tipos = poke.types.map((type) => `<p class="${type.type.name} tipo">${type.type.name}</p>`);
@@ -37,7 +37,7 @@ export function mostrarMisPokemon(pokemons){
             tipos = tipos.join('');
             const div = document.createElement("div");
             div.classList.add("pokemon");
-            div.innerHTML =/* html */ `
+            div.innerHTML =`
             <p class="pokemon-id-back">#${pokemon.id}</p>
             <div class="pokemon-imagen">
                 <img src="${pokemon.img}" alt="${pokemon.name}">
