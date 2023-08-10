@@ -1,19 +1,6 @@
 {
   "pokemons": [
     {
-      "id": "003",
-      "name": "venusaur",
-      "type": [
-        "grass",
-        "poison"
-      ],
-      "stats": [
-        20,
-        1000
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
-    },
-    {
       "id": "046",
       "name": "paras",
       "type": [
@@ -25,18 +12,6 @@
         54
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
-    },
-    {
-      "id": "052",
-      "name": "meowth",
-      "type": [
-        "normal"
-      ],
-      "stats": [
-        4,
-        42
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
     },
     {
       "id": "058",
@@ -61,6 +36,44 @@
         200
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+    },
+    {
+      "id": "009",
+      "name": "blastoise",
+      "type": [
+        "water"
+      ],
+      "stats": [
+        16,
+        855
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    },
+    {
+      "id": "017",
+      "name": "pidgeotto",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "stats": [
+        11,
+        300
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+    },
+    {
+      "id": "021",
+      "name": "spearow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "stats": [
+        3,
+        20
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
     }
   ]
 }
