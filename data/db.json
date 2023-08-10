@@ -1,19 +1,6 @@
 {
   "pokemons": [
     {
-      "id": "046",
-      "name": "paras",
-      "type": [
-        "bug",
-        "grass"
-      ],
-      "stats": [
-        3,
-        54
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
-    },
-    {
       "id": "058",
       "name": "growlithe",
       "type": [
@@ -38,31 +25,6 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
     },
     {
-      "id": "009",
-      "name": "blastoise",
-      "type": [
-        "water"
-      ],
-      "stats": [
-        16,
-        855
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
-    },
-    {
-      "id": "017",
-      "name": "pidgeotto",
-      "type": [
-        "normal",
-        "flying"
-      ],
-      "stats": [
-        11,
-        300
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
-    },
-    {
       "id": "021",
       "name": "spearow",
       "type": [
@@ -74,6 +36,94 @@
         20
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+    },
+    {
+      "id": "065",
+      "name": "alakazam",
+      "type": [
+        "psychic"
+      ],
+      "stats": [
+        15,
+        480
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+    },
+    {
+      "id": "078",
+      "name": "rapidash",
+      "type": [
+        "fire"
+      ],
+      "stats": [
+        17,
+        950
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+    },
+    {
+      "id": "026",
+      "name": "raichu",
+      "type": [
+        "electric"
+      ],
+      "stats": [
+        8,
+        300
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+    },
+    {
+      "id": "145",
+      "name": "zapdos",
+      "type": [
+        "electric",
+        "flying"
+      ],
+      "stats": [
+        16,
+        526
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+    },
+    {
+      "id": "092",
+      "name": "gastly",
+      "type": [
+        "ghost",
+        "poison"
+      ],
+      "stats": [
+        13,
+        1
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+    },
+    {
+      "id": "002",
+      "name": "ivysaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "stats": [
+        10,
+        130
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+    },
+    {
+      "id": "006",
+      "name": "charizard",
+      "type": [
+        "fire",
+        "flying"
+      ],
+      "stats": [
+        17,
+        905
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
     }
   ]
 }
