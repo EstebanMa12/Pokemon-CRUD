@@ -1,0 +1,43 @@
+/* Agrega estos estilos en tu archivo CSS o en una etiqueta <style> en tu HTML */   
+.edit-form {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: red;
+
+    & label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    & input {
+        width: 50%;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    & button {
+        width: 70%;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: none;
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        -webkit-box-shadow: 1px 1px 3px #666666;
+        -moz-box-shadow: 1px 1px 3px #666666;
+        box-shadow: 1px 1px 3px #666666;
+        text-shadow: 2px 1px 3px #666666;
+        background: #4b4a75;
+      
+        &:hover {
+        background: #2080e6;
+      }
+    }
+}
