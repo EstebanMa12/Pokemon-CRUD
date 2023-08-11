@@ -1,14 +1,51 @@
 {
   "pokemons": [
     {
+      "id": "058",
+      "name": "growlithe",
+      "type": [
+        "fire"
+      ],
+      "stats": [
+        "18",
+        "199"
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+    },
+    {
+      "id": "030",
+      "name": "nidorina",
+      "type": [
+        "poison"
+      ],
+      "stats": [
+        8,
+        200
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+    },
+    {
+      "id": "021",
+      "name": "spearow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "stats": [
+        3,
+        20
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+    },
+    {
       "id": "065",
       "name": "alakazam",
       "type": [
         "psychic"
       ],
       "stats": [
-        "15",
-        "48"
+        15,
+        480
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
     },
@@ -25,18 +62,6 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
     },
     {
-      "id": "026",
-      "name": "raichu",
-      "type": [
-        "electric"
-      ],
-      "stats": [
-        8,
-        300
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
-    },
-    {
       "id": "145",
       "name": "zapdos",
       "type": [
@@ -50,29 +75,105 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
     },
     {
-      "id": "092",
-      "name": "gastly",
+      "id": "006",
+      "name": "charizard",
+      "type": [
+        "fire",
+        "flying"
+      ],
+      "stats": [
+        17,
+        905
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+    },
+    {
+      "id": "080",
+      "name": "slowbro",
+      "type": [
+        "water",
+        "psychic"
+      ],
+      "stats": [
+        "19",
+        "785"
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+    },
+    {
+      "id": "120",
+      "name": "staryu",
+      "type": [
+        "water"
+      ],
+      "stats": [
+        8,
+        345
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+    },
+    {
+      "id": "142",
+      "name": "aerodactyl",
+      "type": [
+        "rock",
+        "flying"
+      ],
+      "stats": [
+        18,
+        590
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+    },
+    {
+      "id": "118",
+      "name": "goldeen",
+      "type": [
+        "water"
+      ],
+      "stats": [
+        6,
+        150
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+    },
+    {
+      "id": "094",
+      "name": "gengar",
       "type": [
         "ghost",
         "poison"
       ],
       "stats": [
-        13,
-        1
+        15,
+        405
       ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
     },
     {
-      "id": "011",
-      "name": "metapod",
+      "id": "071",
+      "name": "victreebel",
       "type": [
-        "bug"
+        "grass",
+        "poison"
       ],
       "stats": [
-        7,
-        99
+        17,
+        155
       ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+    },
+    {
+      "id": "059",
+      "name": "arcanine",
+      "type": [
+        "fire"
+      ],
+      "stats": [
+        19,
+        1550
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
     }
   ]
 }
