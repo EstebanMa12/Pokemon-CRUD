@@ -1,0 +1,40 @@
+.edit_Button {
+    
+    width: 70%;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    text-shadow: 2px 1px 3px #666666;
+    background: #4b4a75;
+  }
+  
+  .edit_Button:hover {
+    background: #2080e6;
+  }
+  
+  .delete_Button {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 1px 1px 3px #666666;
+    -moz-box-shadow: 1px 1px 3px #666666;
+    box-shadow: 1px 1px 3px #666666;
+    text-shadow: 2px 1px 3px #666666;
+    background: #d90f0f;
+  }
+  
+  .delete_Button:hover {
+    background: #d62b2b;
+  }
+  

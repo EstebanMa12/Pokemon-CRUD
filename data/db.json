@@ -1,51 +1,14 @@
 {
   "pokemons": [
     {
-      "id": "058",
-      "name": "growlithe",
-      "type": [
-        "fire"
-      ],
-      "stats": [
-        7,
-        190
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
-    },
-    {
-      "id": "030",
-      "name": "nidorina",
-      "type": [
-        "poison"
-      ],
-      "stats": [
-        8,
-        200
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
-    },
-    {
-      "id": "021",
-      "name": "spearow",
-      "type": [
-        "normal",
-        "flying"
-      ],
-      "stats": [
-        3,
-        20
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
-    },
-    {
       "id": "065",
       "name": "alakazam",
       "type": [
         "psychic"
       ],
       "stats": [
-        15,
-        480
+        "15",
+        "48"
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
     },
@@ -100,30 +63,16 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
     },
     {
-      "id": "002",
-      "name": "ivysaur",
+      "id": "011",
+      "name": "metapod",
       "type": [
-        "grass",
-        "poison"
+        "bug"
       ],
       "stats": [
-        10,
-        130
+        7,
+        99
       ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
-    },
-    {
-      "id": "006",
-      "name": "charizard",
-      "type": [
-        "fire",
-        "flying"
-      ],
-      "stats": [
-        17,
-        905
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
     }
   ]
 }
