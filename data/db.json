@@ -1,18 +1,6 @@
 {
   "pokemons": [
     {
-      "id": "058",
-      "name": "growlithe",
-      "type": [
-        "fire"
-      ],
-      "stats": [
-        "18",
-        "199"
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
-    },
-    {
       "id": "030",
       "name": "nidorina",
       "type": [
@@ -32,8 +20,8 @@
         "flying"
       ],
       "stats": [
-        3,
-        20
+        "3",
+        "20"
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
     },
@@ -69,8 +57,8 @@
         "flying"
       ],
       "stats": [
-        16,
-        526
+        "16",
+        "550"
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
     },
@@ -126,18 +114,6 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
     },
     {
-      "id": "118",
-      "name": "goldeen",
-      "type": [
-        "water"
-      ],
-      "stats": [
-        6,
-        150
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
-    },
-    {
       "id": "094",
       "name": "gengar",
       "type": [
@@ -174,6 +150,31 @@
         1550
       ],
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+    },
+    {
+      "id": "029",
+      "name": "nidoran-f",
+      "type": [
+        "poison"
+      ],
+      "stats": [
+        4,
+        70
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+    },
+    {
+      "id": "045",
+      "name": "vileplume",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "stats": [
+        12,
+        186
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
     }
   ]
 }
