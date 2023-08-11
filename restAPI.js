@@ -13,7 +13,7 @@ let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 const dbjson = "http://localhost:3000/pokemons/";
 
-for (let i = 1; i <= 151; i++) {
+for (let i = 1; i <= 200; i++) {
     axios.get(URL + i)
         .then(response=> response.data)
         .then(data => mostrarPokemon(data))

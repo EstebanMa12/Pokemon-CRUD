@@ -89,18 +89,6 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
     },
     {
-      "id": "120",
-      "name": "staryu",
-      "type": [
-        "water"
-      ],
-      "stats": [
-        8,
-        345
-      ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
-    },
-    {
       "id": "142",
       "name": "aerodactyl",
       "type": [
@@ -152,29 +140,66 @@
       "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
     },
     {
-      "id": "029",
-      "name": "nidoran-f",
+      "id": "018",
+      "name": "pidgeot",
       "type": [
-        "poison"
+        "normal",
+        "flying"
       ],
       "stats": [
-        4,
-        70
+        15,
+        395
       ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
     },
     {
-      "id": "045",
-      "name": "vileplume",
+      "id": "130",
+      "name": "gyarados",
       "type": [
-        "grass",
-        "poison"
+        "water",
+        "flying"
       ],
       "stats": [
-        12,
-        186
+        "100",
+        "2500"
       ],
-      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+    },
+    {
+      "id": "158",
+      "name": "totodile",
+      "type": [
+        "water"
+      ],
+      "stats": [
+        6,
+        95
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png"
+    },
+    {
+      "id": "143",
+      "name": "snorlax",
+      "type": [
+        "normal"
+      ],
+      "stats": [
+        21,
+        4600
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+    },
+    {
+      "id": "175",
+      "name": "togepi",
+      "type": [
+        "fairy"
+      ],
+      "stats": [
+        3,
+        15
+      ],
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png"
     }
   ]
 }
